@@ -1,0 +1,77 @@
+.review-card {
+  padding: 22px 24px;
+}
+
+.review-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.reviewer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.reviewer-info {
+  flex: 1;
+}
+
+.reviewer-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.verified-badge {
+  font-size: 0.72rem;
+  color: var(--accent3);
+  background: rgba(106,255,184,0.1);
+  border: 1px solid rgba(106,255,184,0.25);
+  padding: 1px 8px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.reviewer-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.review-date {
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.review-delete {
+  flex-shrink: 0;
+}
+
+.review-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.review-content {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}

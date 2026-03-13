@@ -1,0 +1,128 @@
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--accent); }
+
+.product-hero {
+  display: flex;
+  gap: 0;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.hero-img {
+  width: 320px;
+  flex-shrink: 0;
+  background: var(--surface2);
+}
+
+.hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-body {
+  padding: 32px;
+  flex: 1;
+}
+
+.hero-name {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.hero-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.hero-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-rating-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.hero-review-count {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.hero-price {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--accent3);
+}
+
+/* Detail layout */
+.detail-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.reviews-col { min-width: 0; }
+
+.form-col {
+  position: sticky;
+  top: 88px;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.alert-error {
+  background: rgba(255,106,142,0.1);
+  border: 1px solid rgba(255,106,142,0.3);
+  color: var(--accent2);
+  padding: 14px 18px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .detail-layout { grid-template-columns: 1fr; }
+  .form-col { position: static; }
+  .product-hero { flex-direction: column; }
+  .hero-img { width: 100%; height: 240px; }
+  .hero-name { font-size: 1.4rem; }
+}
