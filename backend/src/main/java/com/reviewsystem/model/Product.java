@@ -47,7 +47,8 @@ public class Product {
         public Builder name(String v)        { this.name = v; return this; }
         public Builder description(String v) { this.description = v; return this; }
         public Builder category(String v)    { this.category = v; return this; }
-        public Builder imageUrl(String v)    { this.imageUrl = v; return this; }
+        @Column(name = "image_url", columnDefinition = "TEXT")
+private String imageUrl;
         public Builder price(Double v)       { this.price = v; return this; }
         public Product build()               { return new Product(this); }
     }
